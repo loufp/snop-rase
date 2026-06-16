@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/snope/">
+    <Project Path="snope/snope-rase/snope-rase.csproj" />
+    <Project Path="snope/snoperase.Api/snoperase.Api.csproj" />
+    <Project Path="snope/snoperase.Application/snoperase.Application.csproj" />
+    <Project Path="snope/snoperase.Domain/snoperase.Domain.csproj" />
+    <Project Path="snope/snoperase.Infastrucure/snoperase.Infastrucure.csproj" />
+  </Folder>
+</Solution>
