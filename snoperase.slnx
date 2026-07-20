@@ -6,4 +6,7 @@
     <Project Path="snope/snoperase.Domain/snoperase.Domain.csproj" />
     <Project Path="snope/snoperase.Infastrucure/snoperase.Infastrucure.csproj" />
   </Folder>
+  <Folder Name="/test/">
+    <Project Path="TestSnope/TestSnope.csproj" />
+  </Folder>
 </Solution>
