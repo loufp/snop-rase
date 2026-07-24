@@ -8,8 +8,9 @@ builder.Services.AddOpenApi();
 
 builder.Services
     .AddApi()
-    .AddInfastructure()
+    .AddInfastructure(builder.Configuration)
     .AddApplication();
+
 
 builder.Host.UseSerilog((context, config) =>
     config.ReadFrom.Configuration(context.Configuration));
