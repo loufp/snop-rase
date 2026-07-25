@@ -52,3 +52,11 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Секреты и переменные окружения
+.env
+.env.*
+!.env.example
+
+# Временные файлы Docker
+.docker/
