@@ -1,0 +1,16 @@
+﻿services:
+  maindb:
+    image: postgres:15 
+    container_name: snope-db
+    environment:
+        POSTGRES_USER: snope
+        POSTGRES_PASSWORD: snope
+        POSTGRES_DB: snope_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - snope_db:/var/lib/postgresql/data
+    restart: no
+    
+volumes:
+  snope_db:
