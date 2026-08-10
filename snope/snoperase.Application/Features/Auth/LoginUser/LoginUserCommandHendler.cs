@@ -1,3 +1,5 @@
+using MediatR;
+using snoperase.Application.Features.Auth.RegisterUser;
 using snoperase.Application.Interface;
 using snoperase.Domain.Exeptions;
 
@@ -19,7 +21,8 @@ public class LoginUserCommandHendler
         _jwtProvider = jwtProvider;
     }
 
-    public async Task<string> Hash(LoginUserCommand request, CancellationToken ct)
+
+    public async Task<string> Handle(LoginUserCommand request, CancellationToken ct)
     {
         var user = await _userRepository.GetByEmailAsync(request.Email, ct) ?? throw new InvalidCreatedDataException();
 
