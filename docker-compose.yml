@@ -3,14 +3,11 @@
     image: postgres:15 
     container_name: snope-db
     environment:
-        POSTGRES_USER: snope
-        POSTGRES_PASSWORD: snope
-        POSTGRES_DB: snope_db
+        POSTGRES_USER: {DB_USER}
+        POSTGRES_PASSWORD: {DB_PASSWORD}
+        POSTGRES_DB: {DB}
     ports:
       - "5433:5432"
     volumes:
       - snope_db:/var/lib/postgresql/data
     restart: no
-    
-volumes:
-  snope_db:

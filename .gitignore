@@ -54,7 +54,7 @@ TestResult.xml
 nunit-*.xml
 
 # Секреты и переменные окружения
-.env
+docker.env
 .env.*
 !.env.example
 
